@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://7rntknltgmct"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_rpoi1"]
+[ext_resource type="Texture2D" uid="uid://cd4tt1fcy36ds" path="res://Assets/space_background_pack/layers/parallax-space-backgound.png" id="2_80i8d"]
+[ext_resource type="Texture2D" uid="uid://dlhdf8is7jlub" path="res://Assets/space_background_pack/layers/parallax-space-big-planet.png" id="3_kh6n6"]
+[ext_resource type="Texture2D" uid="uid://y8hvqrytfwt3" path="res://Assets/space_background_pack/layers/parallax-space-far-planets.png" id="4_wlo1g"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_rpoi1")
+
+[node name="Parallax-space-backgound" type="Sprite2D" parent="."]
+position = Vector2(565, 321)
+scale = Vector2(4.375, 4.21875)
+texture = ExtResource("2_80i8d")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 453.0
+offset_top = 409.0
+offset_right = 707.0
+offset_bottom = 505.0
+text = "Quit
+"
+
+[node name="Rules" type="Button" parent="."]
+offset_left = 451.0
+offset_top = 284.0
+offset_right = 705.0
+offset_bottom = 385.0
+text = "Rules"
+
+[node name="Leaderboard" type="Button" parent="."]
+offset_left = 451.0
+offset_top = 170.0
+offset_right = 703.0
+offset_bottom = 270.0
+text = "Leaderboard"
+
+[node name="Play" type="Button" parent="."]
+offset_left = 452.0
+offset_top = 60.0
+offset_right = 700.0
+offset_bottom = 159.0
+text = "Play"
+
+[node name="Parallax-space-big-planet" type="Sprite2D" parent="."]
+position = Vector2(900, 160)
+texture = ExtResource("3_kh6n6")
+
+[node name="Parallax-space-far-planets" type="Sprite2D" parent="."]
+position = Vector2(521, 613)
+texture = ExtResource("4_wlo1g")
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Rules" to="." method="_on_rules_pressed"]
+[connection signal="pressed" from="Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
