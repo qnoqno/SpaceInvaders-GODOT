@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnve1gmlrymcy"]
+
+[ext_resource type="Script" path="res://Scenes/spawn_alien.gd" id="1_naba6"]
+
+[node name="SpawnAlien" type="Node2D"]
+position = Vector2(-2, -429)
+script = ExtResource("1_naba6")
+
+[node name="MouvementTimer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true

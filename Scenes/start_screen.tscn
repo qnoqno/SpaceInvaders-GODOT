@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0ukdec08axiy"]
+
+[ext_resource type="Script" path="res://Scenes/start_screen.gd" id="1_stqso"]
+[ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="2_ilcqv"]
+[ext_resource type="Texture2D" uid="uid://5s1qaxknbe1f" path="res://Assets/Ufo/Ufo.png" id="3_ckrvi"]
+[ext_resource type="Texture2D" uid="uid://dy2h5dklc8h7p" path="res://Assets/Invaders/Invader1-1.png" id="4_wna2e"]
+[ext_resource type="Texture2D" uid="uid://gf81hnr41a4c" path="res://Assets/Invaders/Invader2-2.png" id="5_0c7bj"]
+[ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="6_6q328"]
+
+[node name="start_screen" type="CanvasLayer"]
+script = ExtResource("1_stqso")
+
+[node name="Play" type="Label" parent="."]
+offset_left = 168.0
+offset_top = 180.0
+offset_right = 722.0
+offset_bottom = 387.0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 40
+text = "PLAY
+
+SPACE INVADERS
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreAdvanceTable" type="Label" parent="."]
+offset_left = 296.0
+offset_top = 360.0
+offset_right = 586.0
+offset_bottom = 391.0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 20
+text = "★SCORE ADVANCE TABLE★"
+
+[node name="Boss" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 292.0
+offset_top = 461.0
+offset_right = 369.0
+offset_bottom = 501.0
+texture = ExtResource("3_ckrvi")
+
+[node name="TextBoss" type="Label" parent="."]
+offset_left = 388.0
+offset_top = 473.0
+offset_right = 603.0
+offset_bottom = 507.0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 30
+text = "= ? MYSTERY"
+
+[node name="Alien1" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 312.0
+offset_top = 512.0
+offset_right = 352.0
+offset_bottom = 552.0
+texture = ExtResource("4_wna2e")
+
+[node name="TextAlien1" type="Label" parent="."]
+offset_left = 386.0
+offset_top = 524.0
+offset_right = 588.0
+offset_bottom = 558.0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 30
+text = "= 30 POINTS"
+
+[node name="Alien2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 308.0
+offset_top = 565.0
+offset_right = 358.0
+offset_bottom = 605.0
+texture = ExtResource("5_0c7bj")
+
+[node name="TextAlien2" type="Label" parent="."]
+offset_left = 385.0
+offset_top = 577.0
+offset_right = 587.0
+offset_bottom = 611.0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 30
+text = "= 20 POINTS
+"
+
+[node name="Alien3" type="TextureRect" parent="."]
+modulate = Color(0, 1, 0.0823529, 1)
+texture_filter = 1
+offset_left = 315.0
+offset_top = 621.0
+offset_right = 355.0
+offset_bottom = 661.0
+texture = ExtResource("6_6q328")
+
+[node name="TextAlien3" type="Label" parent="."]
+modulate = Color(0, 1, 0.0823529, 1)
+offset_left = 384.0
+offset_top = 628.0
+offset_right = 584.0
+offset_bottom = 663.0
+theme_override_fonts/font = ExtResource("2_ilcqv")
+theme_override_font_sizes/font_size = 31
+text = "= 10 POINTS"

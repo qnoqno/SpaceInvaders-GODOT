@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://gwngesygj8pq"]
+
+[ext_resource type="Script" path="res://Scenes/joueur.gd" id="1_ds55p"]
+[ext_resource type="Texture2D" uid="uid://dt0af4o7yh41a" path="res://Assets/Player/Player.png" id="2_ir876"]
+[ext_resource type="Script" path="res://Scenes/TirDepart.gd" id="3_wy1ng"]
+[ext_resource type="PackedScene" uid="uid://bum7qyc2t4xgw" path="res://Scenes/tir_joueur.tscn" id="4_50ewp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cden"]
+size = Vector2(13, 4)
+
+[node name="Joueur" type="Area2D"]
+script = ExtResource("1_ds55p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_ir876")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_8cden")
+
+[node name="TirDepart" type="Node2D" parent="."]
+position = Vector2(0, -4)
+script = ExtResource("3_wy1ng")
+tirJoueur_scene = ExtResource("4_50ewp")

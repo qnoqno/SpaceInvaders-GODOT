@@ -1,2 +1,0 @@
-# SpaceInvaders-GODOT
- Space Invaders 
