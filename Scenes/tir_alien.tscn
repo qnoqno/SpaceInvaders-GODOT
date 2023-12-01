@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv7nomqmxfay7"]
+
+[ext_resource type="Script" path="res://Scenes/tir_alien.gd" id="1_u8paa"]
+[ext_resource type="Texture2D" uid="uid://dqyn6gkxj6slf" path="res://Assets/Weapons/Rocket.png" id="2_x0ahf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdrvr"]
+size = Vector2(3, 18)
+
+[node name="TirAlien" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_u8paa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_x0ahf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tdrvr")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-2.38419e-07, 2.38419e-07)
+scale = Vector2(2, 1.8)
+rect = Rect2(-2.5, -5, 5, 10)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

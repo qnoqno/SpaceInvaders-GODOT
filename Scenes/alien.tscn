@@ -13,6 +13,37 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oq6ni"]
 size = Vector2(5.75, 5.5)
 
+[sub_resource type="Animation" id="Animation_20l51"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_krelw")]
+}
+
+[sub_resource type="Animation" id="Animation_e3mh2"]
+resource_name = "destroy"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_873el"), ExtResource("9_4t2l0")]
+}
+
 [sub_resource type="Animation" id="Animation_mplk4"]
 resource_name = "move_1"
 loop_mode = 1
@@ -27,21 +58,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("1_krelw"), ExtResource("3_4js4k")]
-}
-
-[sub_resource type="Animation" id="Animation_20l51"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("1_krelw")]
 }
 
 [sub_resource type="Animation" id="Animation_eyb8v"]
@@ -74,22 +90,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("6_017i5"), ExtResource("7_21cp8")]
-}
-
-[sub_resource type="Animation" id="Animation_e3mh2"]
-resource_name = "destroy"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("8_873el"), ExtResource("9_4t2l0")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ttguk"]

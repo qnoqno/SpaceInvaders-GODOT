@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bphpqyhr3jqxu"]
+[gd_scene load_steps=7 format=3 uid="uid://bphpqyhr3jqxu"]
 
 [ext_resource type="PackedScene" uid="uid://gwngesygj8pq" path="res://Scenes/joueur.tscn" id="1_j00lb"]
 [ext_resource type="PackedScene" uid="uid://q0gduqgmplfn" path="res://Scenes/tir_catcher.tscn" id="2_pahpn"]
 [ext_resource type="PackedScene" uid="uid://bnve1gmlrymcy" path="res://Scenes/spawn_alien.tscn" id="4_8o01c"]
+[ext_resource type="PackedScene" uid="uid://dx3183eab80o6" path="res://Scenes/spawn_ufo.tscn" id="4_x2l76"]
+[ext_resource type="PackedScene" uid="uid://dgj6d13xu7har" path="res://Scenes/bouclier.tscn" id="5_7h688"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_osrbb"]
 size = Vector2(65.5, 905)
@@ -46,6 +48,24 @@ collision_mask = 4
 position = Vector2(-4.5, 287.75)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_osrbb")
+
+[node name="SpawnUFO" parent="." instance=ExtResource("4_x2l76")]
+
+[node name="Bouclier" parent="." instance=ExtResource("5_7h688")]
+position = Vector2(-301, 182)
+scale = Vector2(4, 4)
+
+[node name="Bouclier2" parent="." instance=ExtResource("5_7h688")]
+position = Vector2(-106, 181)
+scale = Vector2(4, 4)
+
+[node name="Bouclier3" parent="." instance=ExtResource("5_7h688")]
+position = Vector2(104, 181)
+scale = Vector2(4, 4)
+
+[node name="Bouclier4" parent="." instance=ExtResource("5_7h688")]
+position = Vector2(301, 181)
+scale = Vector2(4, 4)
 
 [connection signal="area_entered" from="Murs/MurDroite" to="SpawnAlien" method="_on_mur_droite_area_entered"]
 [connection signal="area_entered" from="Murs/MurGauche" to="SpawnAlien" method="_on_mur_gauche_area_entered"]

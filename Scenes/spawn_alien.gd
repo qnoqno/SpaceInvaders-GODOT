@@ -15,16 +15,17 @@ var movement_direction = 1
 
 
 var alien_scn = preload("res://Scenes/alien.tscn")
+var tir_alien_scn = preload("res://Scenes/tir_alien.tscn")
 
 #NODE REFERENCE
 @onready var mouvement_timer = $MouvementTimer
-
+@onready var tir_timer = $TirTimer
 
 
 func _ready():
 	#SETUP TIMER 
 	mouvement_timer.timeout.connect(move_aliens)
-	
+	tir_timer.timeout.connect(on_alien_tir)
 	
 	var alien1_res = preload("res://Resources/alien1.tres")
 	var alien2_res = preload("res://Resources/alien2.tres")
@@ -76,3 +77,10 @@ func _on_mur_gauche_area_entered(area):
 
 func _on_mur_bas_area_entered(area):
 	pass # Replace with function body.
+
+func on_alien_tir():
+	var random_child_position = get_children().filter(func (child):return child is Alien).map(func (alien):return alien.global_position).pick_random()
+	var tir_alien = tir_alien_scn.instantiate() as Tir_Alien
+	
+	tir_alien.global_position = random_child_position
+	get_tree().root.add_child(tir_alien)
