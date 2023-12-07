@@ -17,12 +17,10 @@
   
 
 -  **Assets**  *Fichier pour les sprites et font*
-
--  **Addons**  *Fichier pour la base de donnée* (non terminé)
-
+-  **Docs** *Documentation*
 -  **Resources**  *Fichier comprenant les aliens et leurs caractéristiques*
-
 -  **Scenes**  *Fichier comprenant toutes les scenes et le code du jeu*
+-  **Addons**  *Fichier pour la base de donnée* (non terminé)
 
   
 
