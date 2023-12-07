@@ -53,7 +53,7 @@ func _process(delta):
 	#MaJ Position
 	position.x += delta_movement 
 ```
-**Tir**
+**Tir du joueur**
 ```
  extends Area2D
 
