@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="alienResource" load_steps=3 format=3 uid="uid://crom1yx4fsxek"]
+
+[ext_resource type="Script" path="res://Resources/config_alien.gd" id="1_y4hu8"]
+[ext_resource type="Texture2D" uid="uid://5s1qaxknbe1f" path="res://Assets/Ufo/Ufo.png" id="2_5gbvs"]
+
+[resource]
+script = ExtResource("1_y4hu8")
+sprite = ExtResource("2_5gbvs")
+width = 0
+animation_name = ""
+points = 50

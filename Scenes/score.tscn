@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b1ykbncxmm6fr"]
+
+[node name="Score" type="HBoxContainer"]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2

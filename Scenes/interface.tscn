@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://vwp0p2ffd0gu"]
+
+[ext_resource type="Script" path="res://Scenes/interface.gd" id="1_gyq0e"]
+[ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="1_xqfqd"]
+
+[node name="Interface" type="CanvasLayer"]
+script = ExtResource("1_gyq0e")
+
+[node name="Pointspoints" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 98.0
+offset_right = 180.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("1_xqfqd")
+theme_override_font_sizes/font_size = 40
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Points" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_xqfqd")
+theme_override_font_sizes/font_size = 40
+text = "SCORE <1>     HI-SCORE     SCORE <2>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="partie_perdu" type="CenterContainer" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/partie_perdu"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.85098, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_xqfqd")
+theme_override_font_sizes/font_size = 40
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="partie_gagne" type="CenterContainer" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/partie_gagne"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0.537255, 0.34902, 1)
+theme_override_fonts/font = ExtResource("1_xqfqd")
+theme_override_font_sizes/font_size = 40
+text = "GAGNÉ"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://c06ipnsb5dp67"]
+
+[ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="1_76u12"]
+
+[node name="Leaderboar" type="CanvasLayer"]
+
+[node name="Leaderboard" type="Label" parent="."]
+offset_right = 900.0
+offset_bottom = 155.0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_76u12")
+theme_override_font_sizes/font_size = 60
+text = "LEADERBOARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 1" type="Label" parent="."]
+offset_top = 186.0
+offset_right = 897.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("1_76u12")
+theme_override_font_sizes/font_size = 30
+text = "Score 1
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 2" type="Label" parent="."]
+offset_top = 392.0
+offset_right = 898.0
+offset_bottom = 566.0
+theme_override_fonts/font = ExtResource("1_76u12")
+theme_override_font_sizes/font_size = 30
+text = "Score 2
+"
+horizontal_alignment = 1
+vertical_alignment = 1

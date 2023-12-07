@@ -33,7 +33,8 @@ size = Vector2(7.75, 8)
 [node name="Bouclier" type="Node2D"]
 
 [node name="BouclierDroite" type="Node2D" parent="."]
-position = Vector2(4, 0.25)
+position = Vector2(-4, 0.25)
+scale = Vector2(-1, 1)
 
 [node name="TopLeft" type="Area2D" parent="BouclierDroite" node_paths=PackedStringArray("sprite")]
 collision_layer = 16
@@ -93,72 +94,6 @@ position = Vector2(8, 7)
 shape = SubResource("RectangleShape2D_qi1yp")
 
 [node name="SpriteBottomRight" type="Sprite2D" parent="BouclierDroite/BottomRight"]
-texture_filter = 1
-position = Vector2(8, 7)
-texture = ExtResource("5_qbj3a")
-
-[node name="BouclierGauche" type="Node2D" parent="."]
-position = Vector2(-4, 0.25)
-scale = Vector2(-1, 1)
-
-[node name="TopLeft" type="Area2D" parent="BouclierGauche" node_paths=PackedStringArray("sprite")]
-collision_layer = 16
-collision_mask = 14
-script = ExtResource("1_xohfq")
-sprite = NodePath("../../BouclierDroite/TopLeft/SpriteTopLeft")
-texture_array = Array[Texture2D]([ExtResource("2_xvtml"), ExtResource("3_1pi5e"), ExtResource("4_0pvxu")])
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BouclierGauche/TopLeft"]
-shape = SubResource("RectangleShape2D_xl8m8")
-
-[node name="SpriteTopLeft" type="Sprite2D" parent="BouclierGauche/TopLeft"]
-texture_filter = 1
-texture = ExtResource("2_0gf65")
-
-[node name="TopRight" type="Area2D" parent="BouclierGauche" node_paths=PackedStringArray("sprite")]
-collision_layer = 16
-collision_mask = 14
-script = ExtResource("1_xohfq")
-sprite = NodePath("../../BouclierDroite/TopRight/SpriteTopRight")
-texture_array = Array[Texture2D]([ExtResource("6_oeymq"), ExtResource("7_riab1"), ExtResource("8_b7g85")])
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BouclierGauche/TopRight"]
-position = Vector2(8, 1)
-shape = SubResource("RectangleShape2D_ii4s6")
-
-[node name="SpriteTopRight" type="Sprite2D" parent="BouclierGauche/TopRight"]
-texture_filter = 1
-position = Vector2(8, 1)
-texture = ExtResource("3_s3cr1")
-
-[node name="BottomLeft" type="Area2D" parent="BouclierGauche" node_paths=PackedStringArray("sprite")]
-collision_layer = 16
-collision_mask = 14
-script = ExtResource("1_xohfq")
-sprite = NodePath("../../BouclierDroite/BottomLeft/SpriteBottomLeft")
-texture_array = Array[Texture2D]([ExtResource("10_pcyvi"), ExtResource("11_7uqor"), ExtResource("12_kcck4")])
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BouclierGauche/BottomLeft"]
-position = Vector2(2.25, 7.5)
-shape = SubResource("RectangleShape2D_nj0l3")
-
-[node name="SpriteBottomLeft" type="Sprite2D" parent="BouclierGauche/BottomLeft"]
-texture_filter = 1
-position = Vector2(2.25, 7.5)
-texture = ExtResource("4_d0wer")
-
-[node name="BottomRight" type="Area2D" parent="BouclierGauche" node_paths=PackedStringArray("sprite")]
-collision_layer = 16
-collision_mask = 14
-script = ExtResource("1_xohfq")
-sprite = NodePath("../../BouclierDroite/BottomRight/SpriteBottomRight")
-texture_array = Array[Texture2D]([ExtResource("14_wuwux"), ExtResource("15_2ca0d"), ExtResource("16_6wpx2")])
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BouclierGauche/BottomRight"]
-position = Vector2(8, 7)
-shape = SubResource("RectangleShape2D_qi1yp")
-
-[node name="SpriteBottomRight" type="Sprite2D" parent="BouclierGauche/BottomRight"]
 texture_filter = 1
 position = Vector2(8, 7)
 texture = ExtResource("5_qbj3a")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b3uh76h1mnde3"]
 
-[ext_resource type="Script" path="res://Ufo.gd" id="1_83rmg"]
+[ext_resource type="Script" path="res://Scenes/Ufo.gd" id="1_limsx"]
 [ext_resource type="Texture2D" uid="uid://5s1qaxknbe1f" path="res://Assets/Ufo/Ufo.png" id="2_n1mip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_urewe"]
@@ -9,7 +9,7 @@ size = Vector2(64, 16)
 [node name="Ufo" type="Area2D"]
 collision_layer = 64
 collision_mask = 2
-script = ExtResource("1_83rmg")
+script = ExtResource("1_limsx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

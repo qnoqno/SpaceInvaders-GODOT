@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dcoy6mphlfi8i" path="res://Assets/Invaders/Invader-explosion-2.png" id="9_4t2l0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oq6ni"]
-size = Vector2(5.75, 5.5)
+size = Vector2(6.25, 5.5)
 
 [sub_resource type="Animation" id="Animation_20l51"]
 length = 0.001
