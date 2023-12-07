@@ -1,59 +1,44 @@
-<p align="center"><img src="addons/supabase/icon.svg" width="80px"/></p>
+# Projet Space Invaders 
 
-👉 [3.x](https://github.com/supabase-community/godot-engine.supabase/tree/main)
+Le but de se projet était de reproduire une copie identique du célèbre jeu Space Invaders de 1978 créé par Tomohiro Nishikado.
 
-# Godot Engine - Supabase (4.x)
-A lightweight addon which integrates Supabase APIs for Godot Engine out of the box.  
+Pour cela, nous avions un délai de 8 semaines pour rendre un jeu terminé et opérationnel.
 
-- [x] Authentication (/auth)
-- [x] Database (/database)
-- [x] Realtime (/realtime)
-- [x] Storage (/storage)
+Nous sommes 4 à avoir travaillé sur ce projet : 
+- Nicolas PRINCIPALLI 
+- Ilyes TAOUFIK
+- Maxence CRABY
+- Giovanni VERDY
 
+## But du jeu
+Le but du jeu est simple,
+vous aurez le contrôle d'un vaisseau et aurez pour objectif l'élimination de tous les envahisseurs et avoir le plus de points.
 
-### UI Library
-A drag&drop UI Library is available at [supabase-ui](https://github.com/fenix-hub/godot-engine.supabase-ui).
+Ne laissez surtout pas les envahisseurs vous éliminez ou atteindre votre vaisseau !
+## Fonctionnalités du jeu 
 
-### examples and demos
-A collection of examples and live demos is available at [*fenix-hub/godot-engine.supabase-examples*](https://github.com/fenix-hub/godot-engine.supabase-examples), both with source code and exported binaries.  
+Tout d'abord, après avoir lancé le jeu, vous arriverez sur la première page du projet qui est le menu.
 
-### how to use
-A wiki is available [*here*](https://github.com/fenix-hub/godot-engine.supabase/wiki).  
-Even though it is still not complete, Classes and APIs references are always listed and updated.  
+Sur ce menu, vous aurez la liste des ennemis avec leurs points équivalent, appuyez sur la touche **"Entrée"** pour commencez à jouer !
 
-### code snippet
-Multiple approaches!
+Après ça, vous arriverez sur le jeu, comme dit plus haut dans **But du jeu** il faudra éliminez tout les envahisseurs.
+Pour commencer vous pouvez vous déplacer de **Gauche** à **Droite** en utilisant les touches ⬅️➡️ de votre clavier.
+Ensuite la fonction la plus importante pour votre réussite **Tirer** pour cela appuyez sur la touche **Espace** ! 
 
-*Asynchronous (signals)*
-```gdscript
-# method 1 (connecting to `Supabase.auth.signed_in` signal)
-func _ready():
-	Supabase.auth.signed_in.connect(_on_signed_in)
-	Supabase.auth.sign_in(
-		"user@supabase.email",
-		"userpwd"
-	)
+Vous connaissez maintenant les fonctionnalités de base du jeu !
+À vous de jouer et d'exterminer tous les envahisseurs ! 
 
-func _on_signed_in(user: SupabaseUser) -> void:
-	print(user)
+###Pour récapituler
+Lancer le jeu : **Entrée**
+Se déplacer à gauche : ⬅️
+Se déplacer à droite : ➡️
+Tirer : **Espace**
+Relancer une partie : **Return** ou **Backspace**
 
-# method 2 (using lambdas, connecting to the `AuthTask.completed` signal)
-func _ready():
-	Supabase.auth.sign_in(
-		"user@supabase.email",
-		"userpwd"
-	).completed.connect(
-		func(authTask: AuthTask) -> void:
-			print(auth_task.user)
-	)
-```
+## Accès au jeu
+Pour pouvoir avoir accès au jeu et vous amusez pendant des après midi entière, rien de plus simple !
+Cliquez directement sur ce lien : [Space Invaders !](https://qnoqnoqnoqno.itch.io/space-invaders).
 
-*Synchronous (await)*
-```gdscript
-func _ready():
-	var auth_task: AuthTask = await Supabase.auth.sign_in(
-		"user@supabase.email",
-		"userpwd"
-	).completed
-	print(auth_task.user)
-```
+Ou 
+
+Rendez-vous directement sur le site [Itch.io](https://itch.io/) recherchez soit **Space Invaders** (dur à trouver) soit directement mon pseudo **qnoqnoqnoqno** (facile à trouver)  
