@@ -8,7 +8,7 @@
 
 - [Godot](https://godotengine.org/) est un moteur de jeu, nous l'utilisons car il est utilisable sur Web
 
-- [Itch.io](https://itch.io/) est une site où l'on peut poster des jeux indépendants gratuitement
+- [Itch.io](https://itch.io/) est un site où l'on peut poster des jeux indépendants gratuitement
 
   
 
