@@ -28,12 +28,12 @@ Ensuite la fonction la plus importante pour votre réussite **Tirer** pour cela 
 Vous connaissez maintenant les fonctionnalités de base du jeu !
 À vous de jouer et d'exterminer tous les envahisseurs ! 
 
-###Pour récapituler
-Lancer le jeu : **Entrée**
-Se déplacer à gauche : ⬅️
-Se déplacer à droite : ➡️
-Tirer : **Espace**
-Relancer une partie : **Return** ou **Backspace**
+### Pour récapituler
+- Lancer le jeu : **Entrée**
+- Se déplacer à gauche : ⬅️
+- Se déplacer à droite : ➡️
+- Tirer : **Espace**
+- Relancer une partie : **Return** ou **Backspace**
 
 ## Accès au jeu
 Pour pouvoir avoir accès au jeu et vous amusez pendant des après midi entière, rien de plus simple !
