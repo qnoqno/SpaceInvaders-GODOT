@@ -121,4 +121,11 @@ func _on_mur_gauche_area_entered(area):
 		position.y += alien_position_y_increment
 		movement_direction *= -1
 ```
+**Elimination des aliens**
+```
+func _on_area_entered(area):
+	if area is TirJoueur: 
+		animation_player.play("destroy")
+		area.queue_free()
+```
 
